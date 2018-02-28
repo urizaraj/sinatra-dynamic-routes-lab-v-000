@@ -40,11 +40,11 @@ class App < Sinatra::Base
     when 'add'
       return "#{@num1 + @num2}"
     when 'subtract'
-      return "#{@num1 + @num2}"
+      return "#{@num1 - @num2}"
     when 'multiply'
-      return "#{@num1 + @num2}"
+      return "#{@num1 * @num2}"
     when 'divide'
-      return "#{@num1 + @num2}"
+      return "#{@num1 / @num2}"
     end
   end
 end
