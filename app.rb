@@ -23,12 +23,11 @@ class App < Sinatra::Base
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
-    words = [
-      :word1,
-      :word2,
-      :word3,
-      :word4,
-      :word5
-    ]
+    words = (1..5).to_a.map do |n|
+      s = "word#{n}".to_s
+      params[s]
+    end
+
+    "#{words.join(' ').}"
   end
 end
