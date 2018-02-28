@@ -28,6 +28,6 @@ class App < Sinatra::Base
       params[s]
     end
 
-    "#{words.join(' ').}"
+    "#{words.join(' ')}."
   end
 end
